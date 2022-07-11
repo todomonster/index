@@ -1,111 +1,64 @@
-* {
-  box-sizing: border-box;
-}
+  /* logo圖片 */
+  .logoImg{
+    width: 200px;
+    animation: shine 5s ease-in-out infinite;
+    cursor: pointer;
+  }
+  @keyframes shine {
+    0% {
+        transform: scale(1);
+    }
 
-body{
-  overflow-x: hidden;
-}
-h1 {
-  margin: 10px;
-}
-.box {
-  margin: 30px auto;
-  transform: translateY(50%);
-  transition: transform 1s ease;
-}
-/* 動畫 */
-.box:nth-of-type(even) {
-  transform: translateY(-50%);
-}
-.box.show {
-  transform: translateY(0);
-}
-.box h2 {
-  font-size: 45px;
-}
-.data-boxImg{
-  background-image: url(./image/blob.svg);
-  background-repeat: no-repeat;
-}
-/* logo圖片 */
-.logoImg{
-  width: 200px;
-}
-/* 介紹詞 */
-.data-indexDesc{
-  background: #f2f2f2;
-  font-weight: bold;
-  /* background-image: url(./image/blob-scene-haikei.svg); */
-  /* background-size: cover; */
-}
-/* index圖+文字 */
-.data-title{
-  animation: fadeIn 3s;
-  height: 100%;
-}
-@keyframes fadeIn{
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-/* 共用邊線 */
-.data-border{
-  border: 1px solid #BFBFBF;
-  border-radius: 10px;
-  box-shadow: 5px 10px 18px #888888;
-}
-/* tdm圖片 */
-.data-tdmPic{
-  width: 500px;
-}
-.imgSize{
-  width: 800px;
-}
-/* 區塊 */
-.data-block{
-  background-color: #BDCDAA;
-}
-.wrap{
-  background-image: url(./image/bg.jpg);
-}
-.btn{
-  width: 200px;
-}
-/* 區塊裡面的標題 */
-.data-block-txt{
-  font-size: 60px;
-  color: #194221;
-  font-weight: bold;
-  border-bottom: 5px solid #194221;
-}
-.index{
-  background-image: url(./image/bg2.jpeg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-}
-.bi-arrow-down-circle, .bi-arrow-up-circle{
-  font-size: 75px;
-  color: #194221;
-  animation: shine 3s infinite ;
-}
-@keyframes shine {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+    25% {
+        transform: scale(1.1);
+    }
 
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
 }
-@media only screen and (max-width: 375px){ 
-  .data-block,.row{
-    margin-top: 10px;
-    padding: 10px;
+  /* 共用邊線 */
+  .data-border{
+    border: 1px solid #BFBFBF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 18px #888888;
   }
-  .text-center{
-    margin: 10px 0;
+  .imgSize{
+    width: 800px;
+    height: 100%;
   }
- }
+  /* 區塊 */
+  .data-block{
+    background-color: #BDCDAA;    
+    height: 80vh;
+    background-image: url(./image/blob-scatter-haikei.svg);
+    background-repeat: no-repeat;
+}
+  .wrap{
+    background-image: url(./image/bg3.jpg);
+    width: 100vw;
+    height: 100vh;
+
+  }
+  /* 毛玻璃效果 */
+  .glassPage{
+    backdrop-filter: blur(3px);
+
+  }
+  /* 區塊裡面的標題 */
+  .data-block-txt{
+    font-size: 60px;
+    color: #194221;
+    font-weight: bold;
+    border-bottom: 5px solid #194221;
+  }
+   .carousel-caption{
+    color: #000;
+   }
+   .row{
+    /* background-color: #FEF5D6; */
+   }
